@@ -1,0 +1,23 @@
+<html>
+<style>
+body{
+background-image:url('https://wallpapercave.com/wp/wp2561091.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+<h1 style="text-align:center";>USING ITERATOR FUNCTION</h1>
+<script>
+const a=(fn,seed)=>
+{
+let res=[],
+val=[null,seed];
+while((val=fn(val[1]))) res.push(val[0]);
+return res;
+};
+var rem=n=>(n>50?false:[-n,n+10]);
+document.write(a(rem,10));
+</script>
+</body>
+</html>

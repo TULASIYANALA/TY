@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JSON</title>
+</head>
+<style>
+body{
+background-image:url('https://wallpapercave.com/wp/wp2561091.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+<h2 style="text-align:center";>CONVERT JSON INTO VEHICLE OBJECT</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+var obj='{ "name": "Toyota Rav4", "engine": "2.5L", "price": 32000 }';
+var obj2=JSON.parse(obj);
+document.getElementById("demo1").innerHTML=obj2.name+"  who has brought the engine of    "+obj2.engine+"  with the price  "+obj2.price;
+document.getElementById("demo").innerHTML=obj;
+</script>
+</body>
+</html>

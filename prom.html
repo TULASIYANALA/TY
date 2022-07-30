@@ -1,0 +1,40 @@
+<html>
+<style>
+body{
+background-image:url('https://wallpapercave.com/wp/wp2561091.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+<h2 style="text-align:center";>BY USING FUNCTIONS REJECT AND RESOLVE</h2>
+
+<h2>JavaScript Promise</h2>
+
+<p id="demo"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+
+// some code (try to change x to 5)
+
+  if (x == 0) {
+    myResolve(" THE VALUE MENTIONED AND COMPARED IS 'TRUE'");
+  } else {
+    myReject("ERROR");
+  }
+});
+
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+</script>
+
+</body>
+</html>
